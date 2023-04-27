@@ -1,14 +1,14 @@
 SPK_NAME = synocli-misc
 SPK_VERS = 1.0
-SPK_REV = 1
+SPK_REV = 1ajf2
 SPK_ICON = src/synocli-misc.png
 
-DEPENDS = cross/bc cross/moreutils cross/misc-util-linux
+DEPENDS = cross/bc cross/xstow cross/moreutils cross/misc-util-linux
 
 MAINTAINER = SynoCommunity
 DISPLAY_NAME = SynoCli misc. Tools
 
-DESCRIPTION = "SynoCli misc. Tools provide a set of miscellaneous small command-line utilities: bc, errno, ifdata, ifne, isutf8, lckdo, mispipe, parallel, pee, sponge, cal, col, colcrt, colrm, column, hexdump, lscpu, lsipc, lsirq, rev, wall, whereis."
+DESCRIPTION = "SynoCli misc. Tools provide a set of miscellaneous small command-line utilities: bc, xstow, errno, ifdata, ifne, isutf8, lckdo, mispipe, parallel, pee, sponge, cal, col, colcrt, colrm, column, hexdump, lscpu, lsipc, lsirq, rev, wall, whereis."
 STARTABLE = no
 CHANGELOG = "Initial package release."
 
@@ -17,6 +17,8 @@ LICENSE  = Each tool is licensed under it's respective license.
 
 # gnu:
 SPK_COMMANDS = bin/bc bin/dc
+SPK_COMMANDS += bin/merge-info
+SPK_COMMANDS += bin/xstow
 
 # moreutils:
 SPK_COMMANDS += bin/errno
